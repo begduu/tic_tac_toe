@@ -65,19 +65,19 @@ while True:
     if player_turn == 1:
         x_turn()
         if winner(board):
-            print("\nPlayer X wins!")
+            print("\nPLAYER X WINS")
             break
         if tie(board):
-            print("\nIt's a tie!")
+            print("\nITS A TIE")
             break
         player_turn = 0 
     else: 
         o_turn()
         if winner(board):
-            print("\nPlayer O wins!")
+            print("\nPLAYER O WINS")
             break
         if tie(board):
-            print("\nIt's a tie!")
+            print("\nITS A TIE")
             break
         player_turn = 1  
 print(board["1"] + "|" + board["2"] + "|" + board["3"])
